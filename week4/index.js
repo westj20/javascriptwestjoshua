@@ -34,3 +34,14 @@ function calculatePoints() {
 
 const calculateButton = document.getElementById("calculate-button");
 calculateButton.addEventListener("click", calculatePoints);
+
+var reset = function(){
+  yards = 0;
+  touchdowns = 0;
+  catches = 0;
+  points = "reset";
+  document.getElementById("reset-button");
+  reset.addEventListener("click", reset)
+
+}
+

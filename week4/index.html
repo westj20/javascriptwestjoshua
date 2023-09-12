@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="index.js" defer></script> 
+    <title>Point Calculator</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Fantasy Calculator Wide Receiver / Running Back</h1>
+        <form id="calculator-form" class="border rounded p-3">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="yards">Yards</label>
+                    <input type="number" class="form-control" id="yards" name="yards" value="">
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="touchdowns">Touchdowns</label>
+                    <input type="number" class="form-control" id="touchdowns" name="touchdowns" value="">
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="catch">Catches</label>
+                    <input type="number" class="form-control" id="catch" name="catch" value="">
+                </div>
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="ppr" name="ppr">
+                <label class="form-check-label" for="ppr">PPR</label>
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="standard" name="standard">
+                <label class="form-check-label" for="standard">Standard</label>
+            </div>
+
+            <button type="button" class="btn btn-primary mt-3" id="calculate-button">Calculate</button>
+        </form>
+
+        <div id="result" class="mt-4"></div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery (for Bootstrap) node_modules were installed cleaner way of doing -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

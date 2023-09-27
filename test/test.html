@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Degrees to Radians Converter</title>
+</head>
+<body>
+    <h1>Degrees to Radians Converter</h1>
+    <label for="degrees">Degrees:</label>
+    <input type="number" id="degrees" placeholder="Enter degrees" oninput="convertDegreesToRadians()">
+    
+    <label for="radians">Radians:</label>
+    <input type="text" id="radians" readonly>
+
+    <script>
+        function convertDegreesToRadians() {
+            const degreesInput = document.getElementById("degrees");
+            const radiansInput = document.getElementById("radians");
+
+            try {
+                const degrees = parseFloat(degreesInput.value);
+                const radians = (degrees * Math.PI) / 180;
+                radiansInput.value = radians.toFixed(2);
+            } catch (error) {
+                radiansInput.value = "Invalid input";
+            }
+        }
+    </script>
+</body>
+</html>
